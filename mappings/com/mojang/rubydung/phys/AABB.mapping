@@ -1,0 +1,38 @@
+CLASS com/mojang/rubydung/phys/AABB com/mojang/rubydung/phys/AABB
+	FIELD epsilon F
+	FIELD field_34 x0 F
+	FIELD field_35 x1 F
+	FIELD field_36 y0 F
+	FIELD field_37 y1 F
+	FIELD field_38 z0 F
+	FIELD field_39 z1 F
+	METHOD <init> (FFFFFF)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD clipXCollide (Lcom/mojang/rubydung/phys/AABB;F)F
+		ARG 1 c
+		ARG 2 xa
+	METHOD clipYCollide (Lcom/mojang/rubydung/phys/AABB;F)F
+		ARG 1 c
+		ARG 2 ya
+	METHOD clipZCollide (Lcom/mojang/rubydung/phys/AABB;F)F
+		ARG 1 c
+		ARG 2 za
+	METHOD expand (FFF)Lcom/mojang/rubydung/phys/AABB;
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
+	METHOD grow (FFF)Lcom/mojang/rubydung/phys/AABB;
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
+	METHOD intersects (Lcom/mojang/rubydung/phys/AABB;)Z
+		ARG 1 c
+	METHOD move (FFF)V
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za

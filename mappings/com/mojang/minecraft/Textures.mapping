@@ -1,0 +1,8 @@
+CLASS com/mojang/rubydung/Textures com/mojang/minecraft/Textures
+	FIELD idMap Ljava/util/HashMap;
+	FIELD lastId I
+	METHOD bind (I)V
+		ARG 0 id
+	METHOD loadTexture (Ljava/lang/String;I)I
+		ARG 0 resourceName
+		ARG 1 mode

@@ -1,0 +1,11 @@
+CLASS com/mojang/rubydung/level/LevelListener com/mojang/minecraft/level/LevelListener
+	METHOD allChanged ()V
+	METHOD lightColumnChanged (IIII)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 y0
+		ARG 4 y1
+	METHOD tileChanged (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
