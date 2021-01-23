@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/phys/AABB com/mojang/rubydung/phys/AABB
+CLASS com/mojang/rubydung/phys/AABB com/mojang/minecraft/phys/AABB
 	FIELD epsilon F
 	FIELD field_34 x0 F
 	FIELD field_35 x1 F
