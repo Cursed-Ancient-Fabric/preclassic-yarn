@@ -1,0 +1,49 @@
+CLASS net/minecraft/class_13 com/mojang/rubydung/level/Frustrum
+	FIELD BACK I
+	FIELD BOTTOM I
+	FIELD FRONT I
+	FIELD LEFT I
+	FIELD RIGHT I
+	FIELD TOP I
+	FIELD _clip clipBuffer Ljava/nio/FloatBuffer;
+	FIELD _modl modelBuffer Ljava/nio/FloatBuffer;
+	FIELD _proj projectionBuffer Ljava/nio/FloatBuffer;
+	FIELD clip [F
+	FIELD field_24 A I
+	FIELD field_25 B I
+	FIELD field_26 C I
+	FIELD field_27 D I
+	FIELD frustum Lnet/minecraft/class_13;
+	FIELD m_Frustum [[F
+	FIELD modl model [F
+	FIELD proj projection [F
+	METHOD calculateFrustum ()V
+	METHOD cubeFullyInFrustum (FFFFFF)Z
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2
+	METHOD cubeInFrustum (FFFFFF)Z
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2
+	METHOD cubeInFrustum (Lnet/minecraft/class_19;)Z
+		ARG 1 boundingBox
+	METHOD getFrustum ()Lnet/minecraft/class_13;
+	METHOD normalizePlane ([[FI)V
+		ARG 1 frustum
+		ARG 2 side
+	METHOD pointInFrustum (FFF)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD sphereInFrustum (FFFF)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 radius

@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_11 com/mojang/rubydung/character/Zombie
+	FIELD arm0 Lnet/minecraft/class_7;
+	FIELD arm1 Lnet/minecraft/class_7;
+	FIELD body Lnet/minecraft/class_7;
+	FIELD head Lnet/minecraft/class_7;
+	FIELD leg0 Lnet/minecraft/class_7;
+	FIELD leg1 Lnet/minecraft/class_7;
+	FIELD rotA F
+	FIELD rot rotation F
+	FIELD speed F
+	FIELD timeOffs timeOffsets F
+	METHOD <init> (Lnet/minecraft/class_14;FFF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD render (F)V
+		ARG 1 a

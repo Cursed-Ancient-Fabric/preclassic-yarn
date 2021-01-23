@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_2 com/mojang/rubydung/HitResult
+	FIELD field_1 f I
+	FIELD field_2 o I
+	FIELD field_3 x I
+	FIELD field_4 y I
+	FIELD field_5 z I
+	METHOD <init> (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 o
+		ARG 5 f

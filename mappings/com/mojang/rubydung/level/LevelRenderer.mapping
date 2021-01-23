@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_16 com/mojang/rubydung/level/LevelRenderer
+	FIELD CHUNK_SIZE I
+	FIELD chunks [Lnet/minecraft/class_12;
+	FIELD field_28 tesselator Lnet/minecraft/class_17;
+	FIELD level Lnet/minecraft/class_14;
+	FIELD xChunks I
+	FIELD yChunks I
+	FIELD zChunks I
+	METHOD <init> (Lnet/minecraft/class_14;)V
+		ARG 1 level
+	METHOD pick (Lnet/minecraft/class_3;)V
+		ARG 1 player
+	METHOD render (Lnet/minecraft/class_3;I)V
+		ARG 1 player
+		ARG 2 layer
+	METHOD renderHit (Lnet/minecraft/class_2;)V
+		ARG 1 hitResult
+	METHOD setDirty (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1

@@ -1,0 +1,38 @@
+CLASS net/minecraft/class_19 com/mojang/rubydung/physics/BoundingBox
+	FIELD epsilon F
+	FIELD field_34 x0 F
+	FIELD field_35 x1 F
+	FIELD field_36 y0 F
+	FIELD field_37 y1 F
+	FIELD field_38 z0 F
+	FIELD field_39 z1 F
+	METHOD <init> (FFFFFF)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD clipXCollide (Lnet/minecraft/class_19;F)F
+		ARG 1 boundingBox
+		ARG 2 xa
+	METHOD clipYCollide (Lnet/minecraft/class_19;F)F
+		ARG 1 boundingBox
+		ARG 2 ya
+	METHOD clipZCollide (Lnet/minecraft/class_19;F)F
+		ARG 1 boundingBox
+		ARG 2 za
+	METHOD expand (FFF)Lnet/minecraft/class_19;
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
+	METHOD grow (FFF)Lnet/minecraft/class_19;
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
+	METHOD intersects (Lnet/minecraft/class_19;)Z
+		ARG 1 boundingBox
+	METHOD move (FFF)V
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za

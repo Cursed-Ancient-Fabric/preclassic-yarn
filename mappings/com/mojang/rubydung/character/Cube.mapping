@@ -1,0 +1,29 @@
+CLASS net/minecraft/class_7 com/mojang/rubydung/character/Cube
+	FIELD field_40 x F
+	FIELD field_41 y F
+	FIELD field_42 z F
+	FIELD polygons [Lnet/minecraft/class_8;
+	FIELD vertices [Lnet/minecraft/class_10;
+	FIELD xRot F
+	FIELD xTexOffs I
+	FIELD yRot F
+	FIELD yTexOffs I
+	FIELD zRot F
+	METHOD <init> (II)V
+		ARG 1 xTexOffs
+		ARG 2 yTexOffs
+	METHOD addBox (FFFIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 w
+		ARG 5 h
+		ARG 6 d
+	METHOD render ()V
+	METHOD setPos (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD setTexOffs (II)V
+		ARG 1 xTexOffs
+		ARG 2 yTexOffs

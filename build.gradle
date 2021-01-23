@@ -27,7 +27,7 @@ import java.time.ZoneId
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-def minecraft_version = "rd-132211"
+def minecraft_version = "rd-132328"
 
 def ENV = System.getenv()
 

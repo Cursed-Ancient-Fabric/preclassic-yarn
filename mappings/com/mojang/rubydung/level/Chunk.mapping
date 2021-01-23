@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_12 com/mojang/rubydung/level/Chunk
+	FIELD aabb boundingBox Lnet/minecraft/class_19;
+	FIELD dirty Z
+	FIELD field_17 tesselator Lnet/minecraft/class_17;
+	FIELD field_18 x0 I
+	FIELD field_19 x1 I
+	FIELD field_20 y0 I
+	FIELD field_21 y1 I
+	FIELD field_22 z0 I
+	FIELD field_23 z1 I
+	FIELD level Lnet/minecraft/class_14;
+	FIELD lists I
+	FIELD rebuiltThisFrame I
+	FIELD updates I
+	METHOD <init> (Lnet/minecraft/class_14;IIIIII)V
+		ARG 1 level
+		ARG 2 x0
+		ARG 3 y0
+		ARG 4 z0
+		ARG 5 x1
+		ARG 6 y1
+		ARG 7 z1
+	METHOD rebuild (I)V
+		ARG 1 layer
+	METHOD render (I)V
+		ARG 1 layer
+	METHOD setDirty ()V

@@ -1,0 +1,35 @@
+CLASS net/minecraft/class_1 com/mojang/rubydung/Entity
+	FIELD field_10 y F
+	FIELD field_11 z F
+	FIELD field_12 yo F
+	FIELD field_13 zo F
+	FIELD field_14 zd F
+	FIELD field_15 yd F
+	FIELD field_6 boundingBox Lnet/minecraft/class_19;
+	FIELD field_7 x F
+	FIELD field_8 xd F
+	FIELD field_9 xo F
+	FIELD heightOffset F
+	FIELD level Lnet/minecraft/class_14;
+	FIELD onGround Z
+	FIELD xRot F
+	FIELD yRot F
+	METHOD <init> (Lnet/minecraft/class_14;)V
+		ARG 1 level
+	METHOD move (FFF)V
+		ARG 1 xa
+		ARG 2 ya
+		ARG 3 za
+	METHOD moveRelative (FFF)V
+		ARG 1 xa
+		ARG 2 za
+		ARG 3 speed
+	METHOD resetPos ()V
+	METHOD setPos (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD tick ()V
+	METHOD turn (FF)V
+		ARG 1 xo
+		ARG 2 yo

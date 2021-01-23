@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_8 com/mojang/rubydung/character/Polygon
+	FIELD vertexCount I
+	FIELD vertices [Lnet/minecraft/class_10;
+	METHOD <init> ([Lnet/minecraft/class_10;)V
+		ARG 1 vertices
+	METHOD <init> ([Lnet/minecraft/class_10;IIII)V
+		ARG 1 vertices
+		ARG 2 u0
+		ARG 3 v0
+		ARG 4 u1
+		ARG 5 v1
+	METHOD render ()V

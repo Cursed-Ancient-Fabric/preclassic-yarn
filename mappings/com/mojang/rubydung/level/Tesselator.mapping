@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_17 com/mojang/rubydung/level/Tesselator
+	FIELD MAX_VERTICES I
+	FIELD colorBuffer Ljava/nio/FloatBuffer;
+	FIELD field_29 b F
+	FIELD field_30 g F
+	FIELD field_31 r F
+	FIELD field_32 u F
+	FIELD field_33 v F
+	FIELD hasColor Z
+	FIELD hasTexture Z
+	FIELD texCoordBuffer Ljava/nio/FloatBuffer;
+	FIELD vertexBuffer Ljava/nio/FloatBuffer;
+	FIELD vertices I
+	METHOD clear ()V
+	METHOD color (FFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD flush ()V
+	METHOD init ()V
+	METHOD tex (FF)V
+		ARG 1 u
+		ARG 2 v
+	METHOD vertex (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_10 com/mojang/rubydung/character/Vertex
+	FIELD field_46 u F
+	FIELD field_47 v F
+	FIELD pos Lnet/minecraft/class_9;
+	METHOD <init> (FFFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 u
+		ARG 5 v
+	METHOD <init> (Lnet/minecraft/class_10;FF)V
+		ARG 1 vertex
+		ARG 2 u
+		ARG 3 v
+	METHOD <init> (Lnet/minecraft/class_9;FF)V
+		ARG 1 pos
+		ARG 2 u
+		ARG 3 v
+	METHOD remap (FF)Lnet/minecraft/class_10;
+		ARG 1 u
+		ARG 2 v

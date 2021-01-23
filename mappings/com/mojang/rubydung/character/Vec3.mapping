@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_9 com/mojang/rubydung/character/Vec3
+	FIELD field_43 x F
+	FIELD field_44 y F
+	FIELD field_45 z F
+	METHOD <init> (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD interpolateTo (Lnet/minecraft/class_9;F)Lnet/minecraft/class_9;
+		ARG 1 vector
+		ARG 2 gradient
+	METHOD set (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
