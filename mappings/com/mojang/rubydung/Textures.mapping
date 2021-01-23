@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/Textures com/mojang/minecraft/Textures
+CLASS com/mojang/rubydung/Textures com/mojang/rubydung/Textures
 	FIELD idMap Ljava/util/HashMap;
 	FIELD lastId I
 	METHOD bind (I)V

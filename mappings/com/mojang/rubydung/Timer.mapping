@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/Timer com/mojang/minecraft/Timer
+CLASS com/mojang/rubydung/Timer com/mojang/rubydung/Timer
 	FIELD MAX_NS_PER_UPDATE J
 	FIELD MAX_TICKS_PER_UPDATE I
 	FIELD NS_PER_SECOND J
@@ -11,4 +11,3 @@ CLASS com/mojang/rubydung/Timer com/mojang/minecraft/Timer
 	FIELD timeScale F
 	METHOD <init> (F)V
 		ARG 1 ticksPerSecond
-	METHOD advanceTime ()V

@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/level/Frustum com/mojang/minecraft/level/Frustum
+CLASS com/mojang/rubydung/level/Frustum com/mojang/rubydung/level/Frustum
 	FIELD BACK I
 	FIELD BOTTOM I
 	FIELD FRONT I
@@ -11,7 +11,6 @@ CLASS com/mojang/rubydung/level/Frustum com/mojang/minecraft/level/Frustum
 	FIELD field_27 D I
 	FIELD frustum Lcom/mojang/rubydung/level/Frustum;
 	FIELD m_Frustum frustumPivot [[F
-	METHOD calculateFrustum ()V
 	METHOD cubeFullyInFrustum (FFFFFF)Z
 		ARG 1 x1
 		ARG 2 y1
@@ -28,7 +27,6 @@ CLASS com/mojang/rubydung/level/Frustum com/mojang/minecraft/level/Frustum
 		ARG 6 z2
 	METHOD cubeInFrustum (Lcom/mojang/rubydung/phys/AABB;)Z
 		ARG 1 aabb
-	METHOD getFrustum ()Lcom/mojang/rubydung/level/Frustum;
 	METHOD normalizePlane ([[FI)V
 		ARG 1 frustum
 		ARG 2 side

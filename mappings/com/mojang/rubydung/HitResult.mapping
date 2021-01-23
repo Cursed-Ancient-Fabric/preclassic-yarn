@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/HitResult com/mojang/minecraft/HitResult
+CLASS com/mojang/rubydung/HitResult com/mojang/rubydung/HitResult
 	FIELD field_1 f I
 	FIELD field_2 o I
 	FIELD field_3 x I

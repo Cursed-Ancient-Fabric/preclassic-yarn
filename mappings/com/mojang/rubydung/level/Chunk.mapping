@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/level/Chunk com/mojang/minecraft/level/Chunk
+CLASS com/mojang/rubydung/level/Chunk com/mojang/rubydung/level/Chunk
 	FIELD aabb Lcom/mojang/rubydung/phys/AABB;
 	FIELD dirty Z
 	FIELD field_17 tesselator Lcom/mojang/rubydung/level/Tesselator;
@@ -25,4 +25,3 @@ CLASS com/mojang/rubydung/level/Chunk com/mojang/minecraft/level/Chunk
 		ARG 1 layer
 	METHOD render (I)V
 		ARG 1 layer
-	METHOD setDirty ()V

@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/level/LevelListener com/mojang/minecraft/level/LevelListener
+CLASS com/mojang/rubydung/level/LevelListener com/mojang/rubydung/level/LevelListener
 	METHOD allChanged ()V
 	METHOD lightColumnChanged (IIII)V
 		ARG 1 x

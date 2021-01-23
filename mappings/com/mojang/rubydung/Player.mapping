@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/Player com/mojang/minecraft/Player
+CLASS com/mojang/rubydung/Player com/mojang/rubydung/Player
 	FIELD field_10 y F
 	FIELD field_11 yd F
 	FIELD field_12 yo F
@@ -23,12 +23,10 @@ CLASS com/mojang/rubydung/Player com/mojang/minecraft/Player
 		ARG 1 xa
 		ARG 2 za
 		ARG 3 speed
-	METHOD resetPos ()V
 	METHOD setPos (FFF)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD tick ()V
 	METHOD turn (FF)V
 		ARG 1 xo
 		ARG 2 yo

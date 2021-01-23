@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/RubyDung com/mojang/minecraft/MinecraftApplet
+CLASS com/mojang/rubydung/RubyDung com/mojang/rubydung/RubyDung
 	FIELD FULLSCREEN_MODE Z
 	FIELD fogColor Ljava/nio/FloatBuffer;
 	FIELD height I

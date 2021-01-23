@@ -1,4 +1,4 @@
-CLASS com/mojang/rubydung/level/LevelRenderer com/mojang/minecraft/level/LevelRenderer
+CLASS com/mojang/rubydung/level/LevelRenderer com/mojang/rubydung/level/LevelRenderer
 	FIELD CHUNK_SIZE I
 	FIELD chunks [Lcom/mojang/rubydung/level/Chunk;
 	FIELD field_28 tesselator Lcom/mojang/rubydung/level/Tesselator;
