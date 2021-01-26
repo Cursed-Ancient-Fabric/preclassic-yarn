@@ -9,4 +9,3 @@ CLASS net/minecraft/class_27 com/mojang/rubydung/particle/ParticleEngine
 		ARG 1 player
 		ARG 2 a
 		ARG 3 layer
-	METHOD tick ()V

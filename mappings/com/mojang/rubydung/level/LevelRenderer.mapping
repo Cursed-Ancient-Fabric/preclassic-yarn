@@ -9,8 +9,9 @@ CLASS net/minecraft/class_16 com/mojang/rubydung/level/LevelRenderer
 	METHOD <init> (Lnet/minecraft/class_14;)V
 		ARG 1 level
 	METHOD getAllDirtyChunks ()Ljava/util/List;
-	METHOD pick (Lnet/minecraft/class_3;)V
+	METHOD pick (Lnet/minecraft/class_3;Lnet/minecraft/class_13;)V
 		ARG 1 player
+		ARG 2 frustum
 	METHOD render (Lnet/minecraft/class_3;I)V
 		ARG 1 player
 		ARG 2 layer

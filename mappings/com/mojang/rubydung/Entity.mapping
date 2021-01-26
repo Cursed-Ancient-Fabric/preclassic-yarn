@@ -19,7 +19,6 @@ CLASS net/minecraft/class_1 com/mojang/rubydung/Entity
 	FIELD yRot F
 	METHOD <init> (Lnet/minecraft/class_14;)V
 		ARG 1 level
-	METHOD isLit ()Z
 	METHOD move (FFF)V
 		ARG 1 xa
 		ARG 2 ya
@@ -29,7 +28,6 @@ CLASS net/minecraft/class_1 com/mojang/rubydung/Entity
 		ARG 2 za
 		ARG 3 speed
 	METHOD remove ()V
-	METHOD resetPos ()V
 	METHOD setPos (FFF)V
 		ARG 1 x
 		ARG 2 y

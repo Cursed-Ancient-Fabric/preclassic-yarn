@@ -1,9 +1,12 @@
 CLASS net/minecraft/class_26 com/mojang/rubydung/particle/Particle
+	FIELD age I
 	FIELD field_61 u F
 	FIELD field_62 v F
 	FIELD field_63 xa F
 	FIELD field_64 ya F
 	FIELD field_65 za F
+	FIELD lifetime I
+	FIELD size F
 	FIELD tex texture I
 	METHOD <init> (Lnet/minecraft/class_14;FFFFFFI)V
 		ARG 1 level
@@ -14,9 +17,11 @@ CLASS net/minecraft/class_26 com/mojang/rubydung/particle/Particle
 		ARG 6 ya
 		ARG 7 za
 		ARG 8 tex
-	METHOD render (Lnet/minecraft/class_17;FFFF)V
+	METHOD render (Lnet/minecraft/class_17;FFFFFF)V
 		ARG 1 tesselator
 		ARG 2 a
 		ARG 3 xa
 		ARG 4 ya
 		ARG 5 za
+		ARG 6 xa2
+		ARG 7 za2

@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_2 com/mojang/rubydung/HitResult
 	FIELD field_1 f I
-	FIELD field_2 o I
 	FIELD field_3 x I
 	FIELD field_4 y I
 	FIELD field_5 z I

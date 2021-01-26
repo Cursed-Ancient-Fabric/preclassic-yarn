@@ -17,7 +17,6 @@ CLASS net/minecraft/class_13 com/mojang/rubydung/level/Frustrum
 	FIELD m_Frustum [[F
 	FIELD modl model [F
 	FIELD proj projection [F
-	METHOD calculateFrustum ()V
 	METHOD cubeFullyInFrustum (FFFFFF)Z
 		ARG 1 x1
 		ARG 2 y1

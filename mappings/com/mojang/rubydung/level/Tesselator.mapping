@@ -14,7 +14,6 @@ CLASS net/minecraft/class_17 com/mojang/rubydung/level/Tesselator
 	FIELD instance Lnet/minecraft/class_17;
 	FIELD len length I
 	FIELD vertices I
-	METHOD clear ()V
 	METHOD color setColor (FFF)V
 		ARG 1 r
 		ARG 2 g
