@@ -1,9 +1,32 @@
 CLASS net/minecraft/class_18 com/mojang/rubydung/level/Tile
+	FIELD dirt Lnet/minecraft/class_18;
+	FIELD empty Lnet/minecraft/class_18;
+	FIELD field_60 id I
 	FIELD grass Lnet/minecraft/class_18;
 	FIELD rock Lnet/minecraft/class_18;
-	FIELD tex I
+	FIELD stoneBrick Lnet/minecraft/class_18;
+	FIELD tex texture I
+	FIELD tiles [Lnet/minecraft/class_18;
+	FIELD wood Lnet/minecraft/class_18;
 	METHOD <init> (I)V
-		ARG 1 tex
+		ARG 1 texture
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 tex
+	METHOD blocksLight ()Z
+	METHOD destroy (Lnet/minecraft/class_14;IIILnet/minecraft/class_27;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 particleEngine
+	METHOD getAABB getBoundingBox (III)Lnet/minecraft/class_19;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD getTexture (I)I
+		ARG 1 face
+	METHOD isSolid ()Z
 	METHOD render (Lnet/minecraft/class_17;Lnet/minecraft/class_14;IIII)V
 		ARG 1 tesselator
 		ARG 2 level
@@ -17,3 +40,21 @@ CLASS net/minecraft/class_18 com/mojang/rubydung/level/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 face
+	METHOD renderFaceNoTexture (Lnet/minecraft/class_17;IIII)V
+		ARG 1 tesselator
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD shouldRenderFace (Lnet/minecraft/class_14;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 layer
+	METHOD tick (Lnet/minecraft/class_14;IIILjava/util/Random;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random

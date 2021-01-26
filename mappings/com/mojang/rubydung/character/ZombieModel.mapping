@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_20 com/mojang/rubydung/character/ZombieModel
+	FIELD arm0 Lnet/minecraft/class_7;
+	FIELD arm1 Lnet/minecraft/class_7;
+	FIELD body Lnet/minecraft/class_7;
+	FIELD head Lnet/minecraft/class_7;
+	FIELD leg0 Lnet/minecraft/class_7;
+	FIELD leg1 Lnet/minecraft/class_7;
+	METHOD render (F)V
+		ARG 1 time

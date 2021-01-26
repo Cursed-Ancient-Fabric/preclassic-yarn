@@ -1,16 +1,21 @@
-CLASS net/minecraft/class_12 com/mojang/rubydung/level/Chunk
+CLASS net/minecraft/class_21 com/mojang/rubydung/level/Chunk
 	FIELD aabb boundingBox Lnet/minecraft/class_19;
+	FIELD dirtiedTime J
 	FIELD dirty Z
-	FIELD field_17 tesselator Lnet/minecraft/class_17;
-	FIELD field_18 x0 I
-	FIELD field_19 x1 I
-	FIELD field_20 y0 I
-	FIELD field_21 y1 I
-	FIELD field_22 z0 I
-	FIELD field_23 z1 I
+	FIELD field_49 tesselator Lnet/minecraft/class_17;
+	FIELD field_50 x0 I
+	FIELD field_51 x1 I
+	FIELD field_52 x F
+	FIELD field_53 y0 I
+	FIELD field_54 y1 I
+	FIELD field_55 y F
+	FIELD field_56 z0 I
+	FIELD field_57 z1 I
+	FIELD field_58 z F
 	FIELD level Lnet/minecraft/class_14;
 	FIELD lists I
-	FIELD rebuiltThisFrame I
+	FIELD totalTime J
+	FIELD totalUpdates I
 	FIELD updates I
 	METHOD <init> (Lnet/minecraft/class_14;IIIIII)V
 		ARG 1 level
@@ -20,6 +25,10 @@ CLASS net/minecraft/class_12 com/mojang/rubydung/level/Chunk
 		ARG 5 x1
 		ARG 6 y1
 		ARG 7 z1
+	METHOD distanceToSqr distanceSquaredTo (Lnet/minecraft/class_3;)F
+		ARG 1 player
+	METHOD isDirty ()Z
+	METHOD rebuild ()V
 	METHOD rebuild (I)V
 		ARG 1 layer
 	METHOD render (I)V

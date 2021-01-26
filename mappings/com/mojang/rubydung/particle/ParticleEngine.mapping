@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_27 com/mojang/rubydung/particle/ParticleEngine
+	FIELD level Lnet/minecraft/class_14;
+	FIELD particles Ljava/util/List;
+	METHOD <init> (Lnet/minecraft/class_14;)V
+		ARG 1 level
+	METHOD add (Lnet/minecraft/class_26;)V
+		ARG 1 particle
+	METHOD render (Lnet/minecraft/class_3;FI)V
+		ARG 1 player
+		ARG 2 a
+		ARG 3 layer
+	METHOD tick ()V

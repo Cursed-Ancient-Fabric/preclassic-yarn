@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_26 com/mojang/rubydung/particle/Particle
+	FIELD field_61 u F
+	FIELD field_62 v F
+	FIELD field_63 xa F
+	FIELD field_64 ya F
+	FIELD field_65 za F
+	FIELD tex texture I
+	METHOD <init> (Lnet/minecraft/class_14;FFFFFFI)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 xa
+		ARG 6 ya
+		ARG 7 za
+		ARG 8 tex
+	METHOD render (Lnet/minecraft/class_17;FFFF)V
+		ARG 1 tesselator
+		ARG 2 a
+		ARG 3 xa
+		ARG 4 ya
+		ARG 5 za

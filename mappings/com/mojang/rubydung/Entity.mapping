@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1 com/mojang/rubydung/Entity
+	FIELD bbHeight F
+	FIELD bbWidth F
 	FIELD field_10 y F
 	FIELD field_11 z F
 	FIELD field_12 yo F
@@ -12,10 +14,12 @@ CLASS net/minecraft/class_1 com/mojang/rubydung/Entity
 	FIELD heightOffset F
 	FIELD level Lnet/minecraft/class_14;
 	FIELD onGround Z
+	FIELD removed Z
 	FIELD xRot F
 	FIELD yRot F
 	METHOD <init> (Lnet/minecraft/class_14;)V
 		ARG 1 level
+	METHOD isLit ()Z
 	METHOD move (FFF)V
 		ARG 1 xa
 		ARG 2 ya
@@ -24,11 +28,15 @@ CLASS net/minecraft/class_1 com/mojang/rubydung/Entity
 		ARG 1 xa
 		ARG 2 za
 		ARG 3 speed
+	METHOD remove ()V
 	METHOD resetPos ()V
 	METHOD setPos (FFF)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD setSize (FF)V
+		ARG 1 width
+		ARG 2 height
 	METHOD tick ()V
 	METHOD turn (FF)V
 		ARG 1 xo

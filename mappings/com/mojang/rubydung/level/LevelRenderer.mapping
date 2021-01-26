@@ -1,13 +1,14 @@
 CLASS net/minecraft/class_16 com/mojang/rubydung/level/LevelRenderer
 	FIELD CHUNK_SIZE I
-	FIELD chunks [Lnet/minecraft/class_12;
-	FIELD field_28 tesselator Lnet/minecraft/class_17;
+	FIELD MAX_REBUILDS_PER_FRAME I
+	FIELD chunks [Lnet/minecraft/class_21;
 	FIELD level Lnet/minecraft/class_14;
 	FIELD xChunks I
 	FIELD yChunks I
 	FIELD zChunks I
 	METHOD <init> (Lnet/minecraft/class_14;)V
 		ARG 1 level
+	METHOD getAllDirtyChunks ()Ljava/util/List;
 	METHOD pick (Lnet/minecraft/class_3;)V
 		ARG 1 player
 	METHOD render (Lnet/minecraft/class_3;I)V
@@ -22,3 +23,5 @@ CLASS net/minecraft/class_16 com/mojang/rubydung/level/LevelRenderer
 		ARG 4 x1
 		ARG 5 y1
 		ARG 6 z1
+	METHOD updateDirtyChunks (Lnet/minecraft/class_3;)V
+		ARG 1 player

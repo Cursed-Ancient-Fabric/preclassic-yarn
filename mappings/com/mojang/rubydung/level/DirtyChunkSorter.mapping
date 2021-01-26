@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_22 com/mojang/rubydung/level/DirtyChunkSorter
+	FIELD frustum Lnet/minecraft/class_13;
+	FIELD now J
+	FIELD player Lnet/minecraft/class_3;
+	METHOD <init> (Lnet/minecraft/class_3;Lnet/minecraft/class_13;)V
+		ARG 1 player
+		ARG 2 frustum
+	METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 chunk
+		ARG 2 chunk1

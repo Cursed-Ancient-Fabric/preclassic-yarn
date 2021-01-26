@@ -1,10 +1,14 @@
 CLASS net/minecraft/class_4 com/mojang/rubydung/RubyDung
 	FIELD FULLSCREEN_MODE Z
-	FIELD fogColor Ljava/nio/FloatBuffer;
+	FIELD field_48 lb Ljava/nio/FloatBuffer;
+	FIELD fogColor0 Ljava/nio/FloatBuffer;
+	FIELD fogColor1 Ljava/nio/FloatBuffer;
 	FIELD height I
 	FIELD hitResult Lnet/minecraft/class_2;
 	FIELD level Lnet/minecraft/class_14;
 	FIELD levelRenderer Lnet/minecraft/class_16;
+	FIELD paintTexture I
+	FIELD particleEngine Lnet/minecraft/class_27;
 	FIELD player Lnet/minecraft/class_3;
 	FIELD selectBuffer Ljava/nio/IntBuffer;
 	FIELD timer Lnet/minecraft/class_6;
@@ -13,6 +17,13 @@ CLASS net/minecraft/class_4 com/mojang/rubydung/RubyDung
 	FIELD zombies Ljava/util/ArrayList;
 	METHOD checkError ()V
 	METHOD destroy ()V
+	METHOD drawGui (F)V
+		ARG 1 time
+	METHOD getBuffer (FFFF)Ljava/nio/FloatBuffer;
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d
 	METHOD init ()V
 	METHOD main ([Ljava/lang/String;)V
 		ARG 0 args
@@ -25,6 +36,9 @@ CLASS net/minecraft/class_4 com/mojang/rubydung/RubyDung
 	METHOD run ()V
 	METHOD setupCamera (F)V
 		ARG 1 a
+	METHOD setupFog (I)V
+		ARG 1 time
+	METHOD setupOrthoCamera ()V
 	METHOD setupPickCamera (FII)V
 		ARG 1 a
 		ARG 2 x

@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_23 com/mojang/rubydung/level/PerlinNoiseFilter
+	FIELD fuzz I
+	FIELD levels I
+	FIELD random Ljava/util/Random;
+	FIELD seed I
+	METHOD <init> (I)V
+		ARG 1 levels
+	METHOD read (II)[I
+		ARG 1 width
+		ARG 2 height

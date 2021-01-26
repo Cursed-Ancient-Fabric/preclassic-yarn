@@ -32,9 +32,9 @@ CLASS net/minecraft/class_13 com/mojang/rubydung/level/Frustrum
 		ARG 4 x2
 		ARG 5 y2
 		ARG 6 z2
-	METHOD cubeInFrustum (Lnet/minecraft/class_19;)Z
-		ARG 1 boundingBox
 	METHOD getFrustum ()Lnet/minecraft/class_13;
+	METHOD isVisible (Lnet/minecraft/class_19;)Z
+		ARG 1 boundingBox
 	METHOD normalizePlane ([[FI)V
 		ARG 1 frustum
 		ARG 2 side

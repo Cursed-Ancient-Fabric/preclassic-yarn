@@ -1,9 +1,12 @@
 CLASS net/minecraft/class_14 com/mojang/rubydung/level/Level
+	FIELD TILE_UPDATE_INTERVAL I
 	FIELD blocks [B
 	FIELD depth I
 	FIELD height I
 	FIELD levelListeners Ljava/util/ArrayList;
 	FIELD lightDepths [I
+	FIELD random Ljava/util/Random;
+	FIELD unprocessed I
 	FIELD width I
 	METHOD <init> (III)V
 		ARG 1 width
@@ -11,18 +14,23 @@ CLASS net/minecraft/class_14 com/mojang/rubydung/level/Level
 		ARG 3 depth
 	METHOD addListener (Lnet/minecraft/class_15;)V
 		ARG 1 levelListener
-	METHOD calcLightDepths (IIII)V
+	METHOD calcLightDepths calculateLight (IIII)V
 		ARG 1 x0
 		ARG 2 y0
 		ARG 3 x1
 		ARG 4 y1
-	METHOD getBrightness (III)F
+	METHOD generateMap ()V
+	METHOD getCubes (Lnet/minecraft/class_19;)Ljava/util/ArrayList;
+		ARG 1 boundingBox
+	METHOD getTile (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD getCubes (Lnet/minecraft/class_19;)Ljava/util/ArrayList;
-		ARG 1 boundingBox
 	METHOD isLightBlocker (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD isLit (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -30,16 +38,13 @@ CLASS net/minecraft/class_14 com/mojang/rubydung/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD isTile (III)Z
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD load ()V
+	METHOD load ()Z
 	METHOD removeListener (Lnet/minecraft/class_15;)V
 		ARG 1 levelListener
 	METHOD save ()V
-	METHOD setTile (IIII)V
+	METHOD setTile (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 type
+	METHOD tick ()V
