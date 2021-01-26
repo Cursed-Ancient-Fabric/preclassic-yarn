@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_18 com/mojang/rubydung/level/Tile
+CLASS net/minecraft/class_18 com/mojang/rubydung/level/tile/Tile
 	FIELD dirt Lnet/minecraft/class_18;
 	FIELD empty Lnet/minecraft/class_18;
 	FIELD field_60 id I
@@ -13,7 +13,6 @@ CLASS net/minecraft/class_18 com/mojang/rubydung/level/Tile
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 tex
-	METHOD blocksLight ()Z
 	METHOD destroy (Lnet/minecraft/class_14;IIILnet/minecraft/class_27;)V
 		ARG 1 level
 		ARG 2 x
@@ -26,7 +25,6 @@ CLASS net/minecraft/class_18 com/mojang/rubydung/level/Tile
 		ARG 3 z
 	METHOD getTexture (I)I
 		ARG 1 face
-	METHOD isSolid ()Z
 	METHOD render (Lnet/minecraft/class_17;Lnet/minecraft/class_14;IIII)V
 		ARG 1 tesselator
 		ARG 2 level
