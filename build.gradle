@@ -21,6 +21,7 @@ plugins {
 	id 'base'
 	id 'maven-publish'
 	id 'java' // for jd gen
+	id "com.jfrog.bintray" version "1.8.5"
 }
 
 import java.time.ZoneId
@@ -731,8 +732,8 @@ task javadocJar(type: Jar, dependsOn: ["javadoc"]) {
 publishing {
 	publications {
 		maven(MavenPublication) {
-			groupId 'net.textilemc'
-			artifactId "yarrn"
+			groupId 'io.github.Cursed-Ancient-Fabric'
+			artifactId "yarn"
 			version yarnVersion
 
 			artifact(compressTiny.output) {
@@ -796,4 +797,23 @@ class WithV2FileOutput extends DefaultTask {
 	File v1Output
 	@OutputFile
 	File v2Output
+}
+
+bintray {
+	user = project.findProperty('bintray.user')
+	key = project.findProperty('bintray.key')
+	publications = ['maven']
+	pkg {
+		repo = 'preclassic-yarn'
+		name = 'preclassic-yarn'
+		userOrg = 'cursed-ancient-fabric'
+		licenses = ['CC0-1.0']
+		vcsUrl = 'https://github.com/Cursed-Ancient-Fabric/preclassic-yarn.git'
+		version {
+			name = "rd-161348"
+			desc =  ""
+			released = new Date()
+			vcsTag = "0.0.1"
+		}
+	}
 }
